@@ -1,7 +1,19 @@
-class User {
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+
+@Entity('users')
+export class User {
+  @PrimaryGeneratedColumn('increment')
+  id: number;
+
+  @Column()
   name: string;
 
-  email: string;
-}
+  @Column()
+  password: string;
 
-export default User;
+  @Column()
+  email: string;
+
+  @Column()
+  age: number;
+}
