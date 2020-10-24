@@ -1,7 +1,8 @@
-import { User } from '@models/User'
+import User from '@models/User';
 
-export class UsersController {
-  teste () {
-    const user = new User()
-  }
-}
+export default {
+  teste() {
+    const user = new User();
+    user.email = 'diovane.rossato@acad.pucrs.br';
+  },
+};
