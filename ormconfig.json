@@ -1,0 +1,20 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "drossato",
+    "password": "instarossato",
+    "database": "instagram-clone",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+        "src/models/**/*.ts"
+    ],
+    "migrations": [
+        "src/database/migrations/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src/models",
+        "migrationsDir": "src/database/migrations"
+    }
+}
